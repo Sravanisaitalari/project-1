@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.complaints">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ViewStatusAdmin"></activity>
+        <activity android:name=".ViewStatusComplaint" />
+        <activity android:name=".ViewLocation" />
+        <activity android:name=".ViewComplaintsEmpMain" />
+        <activity android:name=".ViewComplaintsEmp" />
+        <activity
+            android:name=".ViewComplaintsDep"
+            android:label="@string/title_activity_view_complaints_dep" />
+        <activity android:name=".EmpListMain" />
+        <activity android:name=".EmpList" />
+        <activity android:name=".AssignEmp" />
+        <activity android:name=".ViewComplaintsAMain" />
+        <activity android:name=".ViewComplaintsA" />
+        <activity android:name=".ViewComplaintsStatusMain" />
+        <activity android:name=".ViewComplaintStatus" />
+        <activity android:name=".PoliceComplaints" />
+        <activity android:name=".PoliceHome" />
+        <activity android:name=".ViewComplaintsMain" />
+        <activity android:name=".ViewUsersMain" />
+        <activity android:name=".ViewEmpMain" />
+        <activity android:name=".ViewComplaints" />
+        <activity android:name=".ViewUsers" />
+        <activity android:name=".ViewEmp" />
+        <activity android:name=".AddEmp" />
+        <activity android:name=".AdminHome" />
+        <activity android:name=".ViewStatus" />
+        <activity android:name=".AddComplaints" />
+        <activity android:name=".Home" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
